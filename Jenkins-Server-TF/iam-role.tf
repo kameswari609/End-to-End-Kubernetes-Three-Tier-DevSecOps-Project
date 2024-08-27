@@ -9,7 +9,8 @@ resource "aws_iam_role" "iam-role" {
       "Principal": {
         "Service": "ec2.amazonaws.com"
       },
-      "Action": "sts:AssumeRole"
+      "Action": "sts:AssumeRole", "s3:GetObject", "s3:ListBucket"
+    ]
     }
   ]
 }
